@@ -1,9 +1,22 @@
 img {
     display: block;
     margin: auto;
-    max-width: 100%;
-    width: 40%;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: #fff;
+    border-radius: 35%;
+    width: 35%;
     height: auto;
+}
+
+h1 {
+    color: rgb(206, 206, 85);
+    
+}
+
+figcaption {
+    color: rgb(202, 212, 57);
+    
 }
 
 header {
@@ -18,6 +31,14 @@ body {
     background-color: #1A1E26;
 }
 
+p {
+    color: rgb(211, 64, 64);
+    text-align: center;
+}
+
+strong {
+    color: rgb(223, 90, 90);
+}
 
 footer {
     justify-content: center;
@@ -35,6 +56,7 @@ section > main {
 
 article {
     border-radius: 5px;
+    font-size: 20px;
     padding: 20px;
     margin-bottom: 20px;
     justify-content: center;
