@@ -63,3 +63,12 @@ article {
     text-align: center;
 }
 
+hr {
+    border-top: 1px yellow solid;
+    border-bottom: 1px rgb(165, 165, 54) solid;
+}
+
+.margin-top {
+    margin-top: -30px;
+}
+
