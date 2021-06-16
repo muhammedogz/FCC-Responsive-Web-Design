@@ -1,12 +1,11 @@
 img {
-    display: block;
-    margin: auto;
     border-width: 10px;
     border-style: dashed;
     border-color: #fff;
     border-radius: 35%;
     width: 35%;
     height: auto;
+    max-width: max-content;
 }
 
 h1 {
@@ -66,6 +65,12 @@ article {
 hr {
     border-top: 1px yellow solid;
     border-bottom: 1px rgb(165, 165, 54) solid;
+}
+
+#img-div {
+    border: 3px solid green;
+    width: auto;
+    height: auto;
 }
 
 .margin-top {
