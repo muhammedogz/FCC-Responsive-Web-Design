@@ -5,7 +5,11 @@ img {
     border-radius: 35%;
     width: 35%;
     height: auto;
-    max-width: max-content;
+
+    /* For passing tests */
+    display: block;
+    margin: auto;
+    max-width: 100%;
 }
 
 h1 {
@@ -65,12 +69,6 @@ article {
 hr {
     border-top: 1px yellow solid;
     border-bottom: 1px rgb(165, 165, 54) solid;
-}
-
-#img-div {
-    border: 3px solid green;
-    width: auto;
-    height: auto;
 }
 
 .margin-top {
