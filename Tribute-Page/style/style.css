@@ -1,7 +1,7 @@
 img {
     border-width: 10px;
     border-style: dashed;
-    border-color: #fff;
+    border-color: rgb(33, 100, 209);
     border-radius: 35%;
     width: 35%;
     height: auto;
@@ -14,15 +14,16 @@ img {
 
 h1 {
     color: rgb(206, 206, 85);
-    
+    font-size: 40px;
 }
 
 figcaption {
     color: rgb(202, 212, 57);
-    
 }
 
 header {
+    border: solid 2px rgb(111, 201, 28);
+    border-style: double;
     text-align: center;
 }
 
