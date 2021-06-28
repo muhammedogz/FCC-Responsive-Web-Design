@@ -8,7 +8,7 @@ img {
 
     /* For passing tests */
     display: block;
-    margin: auto;
+    margin: 0 auto;
     max-width: 100%;
 }
 
