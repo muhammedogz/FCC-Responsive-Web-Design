@@ -1,7 +1,29 @@
+body {
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    margin: 0px;
+    color: #fff;
+    background-color: #1A1E26;
+}
+
+figcaption {
+    color: rgb(229,205,80);
+}
+
+header {
+    border: solid 2px rgb(229,205,80);
+    border-style: double;
+    text-align: center;
+}
+
+hr {
+    border-top: 1px rgb(229,205,80) solid;
+    border-bottom: 1px rgb(78,141,194) solid;
+}
+
 img {
-    border-width: 10px;
-    border-style: dashed;
-    border-color: rgb(33, 100, 209);
+    border: dashed rgb(78,141,194) 10px;
     border-radius: 35%;
     width: 35%;
     height: auto;
@@ -13,27 +35,13 @@ img {
 }
 
 h1 {
-    color: rgb(206, 206, 85);
+    color: rgb(229,205,80);
     font-size: 40px;
 }
 
-figcaption {
-    color: rgb(202, 212, 57);
-}
-
-header {
-    border: solid 2px rgb(111, 201, 28);
-    border-style: double;
-    text-align: center;
-}
-
-
-body {
-    padding: 0;
-    height: 100%;
-    margin: 0px;
-    color: #fff;
-    background-color: #1A1E26;
+article {
+    font-size: 20px;
+    padding: 20px;
 }
 
 p {
@@ -46,34 +54,5 @@ strong {
 }
 
 footer {
-    justify-content: center;
     text-align: center;
 }
-
-section > main {
-    flex-grow: 1;
-    flex-basis: 100%;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    overflow: auto;
-}
-
-article {
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-align: center;
-}
-
-hr {
-    border-top: 1px yellow solid;
-    border-bottom: 1px rgb(165, 165, 54) solid;
-}
-
-.margin-top {
-    margin-top: -30px;
-}
-
