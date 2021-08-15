@@ -82,15 +82,14 @@ https://images.squarespace-cdn.com/content/v1/5cc3d1b051f4d40415789cc2/160274310
 https://pbs.twimg.com/media/Ex-iz4SWEAE2L-R.jpg
 */
 
-header:hover {
+header:hover,
+header:focus,
+header:active {
     background: url(https://pbs.twimg.com/media/Ex-iz4SWEAE2L-R.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.title:hover {
-    
-}
 
 
 
