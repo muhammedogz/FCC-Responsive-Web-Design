@@ -1,70 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    padding: 0;
-    text-align: center;
-    height: 100%;
-    margin: 0px;
-    color: #fff;
-    background-color: #1A1E26;
-}
-
-figcaption {
-    color: rgb(229,205,80);
-}
-
-header {
-    border: solid 2px rgb(229,205,80);
-    border-style: double;
-    text-align: center;
-}
-
-hr {
-    border-top: 1px rgb(229,205,80) solid;
-    border-bottom: 1px rgb(78,141,194) solid;
-}
-
-img {
-    border: dashed rgb(78,141,194) 10px;
-    border-radius: 35%;
-    width: 35%;
-    height: auto;
-
-    /* For passing tests */
-    display: block;
-    margin: 0   auto;
-    max-width: 100%;
-}
-
-h1 {
-    color: rgb(229,205,80);
-    font-size: 40px;
-}
-
-article {
-    font-size: 20px;
-    padding: 20px;
-}
-
-p {
-    color: rgb(211, 64, 64);
-    text-align: center;
-}
-
-strong {
-    color: rgb(223, 90, 90);
-}
-
-footer {
-    text-align: center;
-}
-
-a:hover {
-    color:rgb(223, 90, 90);
-}
-
-a:visited {
-    color: white;
-}
-
-a:focus {
-    background-color: green;
+    margin: 0;
+    
 }
