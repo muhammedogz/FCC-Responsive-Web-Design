@@ -57,44 +57,39 @@ header {
 }
 
 .hover-title {
-    background: url(../image/regular-background.png);
-    background-position: 0 40%;
-    background-size: cover;
-    padding: 2em 0;
-
-    width: 750px;
-    margin: 0 auto;
-
+    /* allows to use only child hover state */
     pointer-events: none;
+
+    background: url(../image/regular-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+    padding: 2em 2em;
     transition: background 300ms;
 }
-
-.hover-title-child {
-    display: block;
-    width: inherit;
-    height: 150px;
-    /* background-color: black; */
-    border: 2px solid black;
-    pointer-events: auto;
-}
-
-/*
-
-https://images.squarespace-cdn.com/content/v1/5cc3d1b051f4d40415789cc2/1602743104036-3JKGG5AYADN5H4VOBZWU/amazon-original-invincible-logo.jpg
-https://pbs.twimg.com/media/Ex-iz4SWEAE2L-R.jpg
-*/
 
 .hover-title:hover,
 .hover-title:focus,
 .hover-title:active {
     background: url(../image/blood-background.png);
-    background-position: center;
-    background-position: 0 40%;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
+.hover-title-child {
+    pointer-events: auto;
 
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+}
 
+.hide-title {
+    display: none;
+}
 
 /* main */
 
@@ -137,5 +132,21 @@ figcaption {
 @media (min-width: 780px) {
     body {
         background-color: pink;
+    }
+
+    .hover-title {
+        background-position: 50% 40%;
+        background-size: 70%;
+    }
+
+    .hover-title:hover,
+    .hover-title:focus,
+    .hover-title:active {
+        background-position: 50% 40%;
+        background-size: 70%;
+    }
+
+    .hover-title-child {
+        width: 60%;
     }
 }
