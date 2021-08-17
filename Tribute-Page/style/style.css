@@ -28,6 +28,7 @@ img {
 
 h1,
 h2,
+h3,
 ul {
     margin: 0;
 }
@@ -99,6 +100,10 @@ header {
 /* main */
 
 main {
+    
+}
+
+.bg-main {
     background-color: var(--bg-main);
     background-image: url(../image/main-background.jpg);
     background-blend-mode: multiply;
@@ -108,15 +113,6 @@ main {
 }
 
 /*- Main Section -*/
-
-.section-main {
-    padding: 2em 0;
-}
-
-.section-main article  {
-    width: 80%;
-    margin: 0 auto;
-}
 
 /*- Image -*/
 
@@ -134,10 +130,22 @@ figcaption {
 
 /*- Article -*/
 
+.section-main {
+    padding: 2em 0;
+}
 
 .section-main strong {
     color: rgb(221, 43, 43);
     font-weight: bolder;
+}
+
+.section-main article  {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-main article p:last-child {
+    margin: 0;
 }
 
 /*- Section Talent -*/
