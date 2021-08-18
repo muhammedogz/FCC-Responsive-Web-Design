@@ -6,7 +6,7 @@ font-family: 'Mali', cursive;
     --invincible-color: #f9e855;
     --bg-header: #189ef7;
     --bg-main: #4D5456;
-    --bg-talent: #2A8696;
+    --bg-talent: #11343a;
     --bg-footer: #181621;
 }
 
@@ -99,9 +99,6 @@ header {
 
 /* main */
 
-/* main {
-    
-} */
 
 .bg-main {
     background-color: var(--bg-main);
@@ -153,12 +150,39 @@ figcaption {
 
 .bg-talent {
     background-color: var(--bg-talent);
+    background-image: url(../image/superpowers.jpg);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: 80%;
+
+    padding: 2em;
 }
+
+.section-talent {
+    color: #fff;
+}
+
+.talent-heading {
+    text-align: center;
+}
+
+.section-talent ul {
+    margin: 1em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
 
 /* Footer */
 
 footer {
     background-color: var(--bg-footer);
+    padding: 2em;
+    text-align: center;
 }
 
 /* media */
