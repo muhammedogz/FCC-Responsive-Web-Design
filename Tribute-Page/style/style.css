@@ -99,9 +99,9 @@ header {
 
 /* main */
 
-main {
+/* main {
     
-}
+} */
 
 .bg-main {
     background-color: var(--bg-main);
@@ -125,7 +125,8 @@ main {
 figcaption {
     color: #868578;
     text-align: center;
-    opacity: .4;
+    opacity: .7;
+    margin-top: .5em;
 }
 
 /*- Article -*/
