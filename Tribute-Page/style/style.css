@@ -8,6 +8,7 @@ font-family: 'Mali', cursive;
     --bg-main: #4D5456;
     --bg-talent: #11343a;
     --bg-footer: #181621;
+    --bg-made-by: #a6b0b3;
 }
 
 * {
@@ -210,6 +211,23 @@ footer div {
     margin: 2em;
 }
 
+/* made by */
+
+.made-by {
+    text-align: center;
+    background-color: var(--bg-made-by);
+    margin: 0;
+    padding: 1em;
+}
+
+.made-by p {
+    margin: 0;
+}
+
+.made-by a:hover,
+.made-by a:focus {
+    color: #189ef7;
+}
 
 /* media */
 
