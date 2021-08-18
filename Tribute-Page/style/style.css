@@ -73,7 +73,7 @@ header {
     
     
     padding: 2em 2em;
-    transition: background 300ms;
+    transition: background 300ms ease-in-out;
 }
 
 .hover-title:hover,
@@ -189,6 +189,7 @@ footer {
 }
 
 footer a {
+    display: inline-block;
     background-color: #4D5456;
     background: rgb(255,230,0);
     background: linear-gradient(143deg, rgba(255,230,0,1) 13%, rgba(77,84,86,1) 66%);
@@ -196,21 +197,23 @@ footer a {
     text-decoration: none;
     color: #fff;
     transform: scale(1);
-    transition: transform 300ms;
+    transition: all .3s ease-in-out;
 }
 
 footer a:hover,
 footer a:focus {
-    transform: scale(1.4);
+    transform: scale(1.1);
+    color: #000;
+}
+
+footer div {
+    margin: 2em;
 }
 
 
 /* media */
 
 @media (min-width: 780px) {
-    body {
-        background-color: red;
-    }
 
     .hover-title {
         background-position: 50% 40%;
@@ -226,5 +229,13 @@ footer a:focus {
 
     .hover-title-child {
         width: 60%;
+    }
+
+    /* Main section */
+
+    /* talent section */
+
+    .section-talent ul {
+        justify-content: space-around;
     }
 }
