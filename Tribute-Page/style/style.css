@@ -167,15 +167,18 @@ figcaption {
 }
 
 .section-talent ul {
-    margin: 1em;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    list-style: circle;
 }
 
+.section-talent li:first-child {
+    color: var(--invincible-color);
+}
 
-
-
+.section-talent li:last-child {
+    color: #189ef7;
+}
 
 /* Footer */
 
@@ -184,6 +187,23 @@ footer {
     padding: 2em;
     text-align: center;
 }
+
+footer a {
+    background-color: #4D5456;
+    background: rgb(255,230,0);
+    background: linear-gradient(143deg, rgba(255,230,0,1) 13%, rgba(77,84,86,1) 66%);
+    padding: 1em 1em;
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+footer a:hover,
+footer a:focus {
+    transform: scale(1.4);
+}
+
 
 /* media */
 
