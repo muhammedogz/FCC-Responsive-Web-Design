@@ -242,21 +242,22 @@ footer div {
 /* media */
 
 @media (min-width: 780px) {
-
     .hover-title {
         background-position: 50% 40%;
-        background-size: 70%;
+        background-size: 50%;
+        height: 170px;
     }
 
     .hover-title:hover,
     .hover-title:focus,
     .hover-title:active {
         background-position: 50% 40%;
-        background-size: 70%;
+        background-size: 50%;
     }
 
     .hover-title-child {
-        width: 60%;
+        width: 40%;
+        height: 95%;
     }
 
     /* Main section */
