@@ -205,6 +205,7 @@ footer a {
     text-decoration: none;
     color: #fff;
     transform: scale(1);
+    border: 1px solid white;
     transition: all .3s ease-in-out;
 }
 
@@ -212,6 +213,7 @@ footer a:hover,
 footer a:focus {
     transform: scale(1.1);
     color: #000;
+    border: 1px solid wheat;
 }
 
 footer div {
@@ -224,7 +226,7 @@ footer div {
     text-align: center;
     background-color: var(--bg-made-by);
     margin: 0;
-    padding: 1em;
+    padding: 2em;
 }
 
 .made-by p {
@@ -267,11 +269,12 @@ footer div {
     .section-main figure {
         width: 40%;
         align-self: center;
-        margin: 3em 0;
+        margin: 3em 3em;
     }
 
     .section-main article {
         width: 50%;
+        margin: 0 3em;
     }
 
     /* talent section */
