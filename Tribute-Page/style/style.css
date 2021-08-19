@@ -264,6 +264,7 @@ footer div {
 
     .section-main {
         flex-direction: row;
+        gap: 1em;
         justify-content: space-between;
         padding: 4em;
     }
@@ -271,12 +272,11 @@ footer div {
     .section-main figure {
         width: 40%;
         align-self: center;
-        margin: 3em 3em;
+        margin: 3em auto;
     }
 
     .section-main article {
         width: 50%;
-        margin: 0 3em;
     }
 
     /* talent section */
@@ -289,7 +289,7 @@ footer div {
 @media (max-width: 1000px) and (min-width: 780px) 
 {
     .section-main {
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 2em;
         margin: 0 auto;
     }
