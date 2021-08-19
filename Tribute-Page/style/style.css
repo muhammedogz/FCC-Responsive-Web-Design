@@ -284,3 +284,24 @@ footer div {
         justify-content: space-around;
     }
 }
+
+@media (max-width: 1000px) and (min-width: 780px) 
+{
+    .section-main {
+        justify-content: space-between;
+        padding: 2em;
+        margin: 0 auto;
+    }
+
+    .section-main figure {
+        width: 40%;
+        align-self: center;
+        margin: 0;
+    }
+
+    .section-main article {
+        width: 40%;
+        margin: 0;
+    }
+
+}
