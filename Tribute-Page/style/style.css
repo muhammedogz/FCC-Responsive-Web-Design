@@ -135,9 +135,10 @@ figcaption {
     flex-direction: column;
 }
 
-.section-main strong {
-    color: rgb(221, 43, 43);
-    font-weight: bolder;
+.section-main strong,
+.section-main b {
+    color: var(--bg-header);
+    font-weight: 700;
 }
 
 .section-main article  {
