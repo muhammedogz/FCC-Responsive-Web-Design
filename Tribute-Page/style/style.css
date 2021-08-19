@@ -131,6 +131,8 @@ figcaption {
 
 .section-main {
     padding: 2em 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-main strong {
@@ -145,6 +147,11 @@ figcaption {
 
 .section-main article p:last-child {
     margin: 0;
+}
+
+.tribute-info-title  {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /*- Section Talent -*/
@@ -250,6 +257,22 @@ footer div {
     }
 
     /* Main section */
+
+    .section-main {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4em;
+    }
+
+    .section-main figure {
+        width: 40%;
+        align-self: center;
+        margin: 3em 0;
+    }
+
+    .section-main article {
+        width: 50%;
+    }
 
     /* talent section */
 
