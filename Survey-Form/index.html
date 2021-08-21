@@ -9,26 +9,27 @@
 </head>
 <body>
     <main>
-        <h1>Welcome to the Survey Form</h1>
-        <form action="" method="POST">
+        <h1 id="title">Welcome to the Survey Form</h1>
+        <p id="description">This is a survey about FCC Test</p>
+        <form id="survey-form" action="" method="POST">
             <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
 
             <div>
-                <label for="mail">Mail</label>
-                <input type="email" id="mail" name="mail" required>
+                <label for="email" id="email-label">Mail</label>
+                <input type="email" id="email" name="email" placeholder="Enter your mail" required>
             </div>
 
             <div>
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" id="number" name="age" min="0" max="110" placeholder="Enter your age">
             </div>
             
             <div>
-                <label for="role">What is your current Role?</label>
-                <select name="role" id="role" required>
+                <label for="dropdown">What is your current Role?</label>
+                <select name="role" id="dropdown" required>
                     <option value="" selected disabled>Select Current Role</option>
                     <option value="Student">Student</option>
                     <option value="Full-Time">Full Time</option>
@@ -41,7 +42,7 @@
             <div>
                 <p>Would You Recommend FCC to a Friend?</p>
                 <label for="yes">Yes</label>
-                <input type="radio" id="yes" value="maybe" name="recommend">
+                <input type="radio" id="yes" value="yes" name="recommend">
 
                 <label for="maybe">Maybe</label>
                 <input type="radio" id="maybe" value="maybe" name="recommend">
@@ -63,10 +64,10 @@
             <div>
                 <p>What would you like to see improved?</p>
                 <label for="front-end">Front-end Projects</label>
-                <input type="checkbox" name="improve" id="front-end">
+                <input type="checkbox" name="improve" id="front-end" value="front-end">
 
                 <label for="back-end">Back-end Projects</label>
-                <input type="checkbox" name="improve" id="back-end">
+                <input type="checkbox" name="improve" id="back-end" value="back-end">
             </div>
 
             <div>
@@ -75,7 +76,7 @@
             </div>
 
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </div>
         </form>
     </main>
