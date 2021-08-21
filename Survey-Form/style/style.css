@@ -151,3 +151,21 @@ textarea {
 	max-height: 15vh;
 	resize: vertical;
 }
+
+button {
+	display: inline-block;
+	padding: 1em 2em;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	background-color: var(--color-underline);
+	transform: scale(1);
+	text-align: center;
+	color: #fff;
+	transition: all 250ms;
+}
+
+button:hover {
+	transform: scale(1.05);
+	color: var(--color-bg-form);
+}
