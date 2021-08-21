@@ -1,0 +1,95 @@
+:root {
+	--color-outer: #f00808;
+	--color-bg-form: #2f5c64;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+
+	font-size: 1rem;
+	background-color: pink;
+}
+
+body,
+h1,
+p {
+	margin: 0;
+}
+
+/* Typography */
+
+h1 {
+	font-size: 1.4em;
+}
+
+input,
+select,
+textarea,
+button {
+	margin: 0;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+/* Container */
+
+.container {
+	width: 80%;
+	margin: 1em auto 0 auto;
+}
+
+.form-container {
+	width: 100%;
+	padding: 0.15em;
+	margin: 1em auto;
+	background-color: var(--color-outer);
+	border-radius: 1em;
+}
+
+/* head */
+
+.form-head {
+	text-align: center;
+}
+
+/* form */
+
+form {
+	width: 100%;
+	padding: 2.2em;
+	color: #fff;
+	background-color: var(--color-bg-form);
+	border-radius: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+	width: 100%;
+	margin: 0.2em 0 1em 0;
+	padding: 0.4em;
+	background-color: #fff;
+	border-radius: 0.5em;
+}
+
+label {
+	display: block;
+}
+
+input:focus,
+input:hover {
+	border: 2px solid var(--color-outer);
+}
+
+textarea {
+	height: 12.5vh;
+	min-height: 10vh;
+	max-height: 15vh;
+	resize: vertical;
+}
