@@ -83,7 +83,11 @@ label {
 }
 
 input:focus,
-input:hover {
+input:hover,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus {
 	border: 2px solid var(--color-outer);
 }
 
