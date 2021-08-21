@@ -1,3 +1,8 @@
+:root {
+	--color-outer: #f00808;
+	--color-bg-form: #2f5c64;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -21,13 +26,31 @@ h1 {
 	font-size: 1.4em;
 }
 
+input,
+select,
+textarea,
+button {
+	margin: 0;
+	font-size: inherit;
+	font-family: inherit;
+}
+
 /* Container */
 
 .container {
-	background-color: #fff;
 	width: 80%;
-	margin: 0 auto;
+	margin: 1em auto 0 auto;
 }
+
+.form-container {
+	width: 100%;
+	padding: 0.15em;
+	margin: 1em auto;
+	background-color: var(--color-outer);
+	border-radius: 1em;
+}
+
+/* head */
 
 .form-head {
 	text-align: center;
@@ -36,26 +59,32 @@ h1 {
 /* form */
 
 form {
-	width: 90%;
-	margin: 0 auto;
+	width: 100%;
+	padding: 2.2em;
+	color: #fff;
+	background-color: var(--color-bg-form);
+	border-radius: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+	width: 100%;
+	margin: 0.2em 0 1em 0;
+	padding: 0.4em;
+	background-color: #fff;
+	border-radius: 0.5em;
 }
 
 label {
 	display: block;
 }
 
-input {
-	border: none;
-	border: 2px solid #4ca2b1;
-}
-
-input,
-select,
-textarea,
-button {
-	display: inline-block;
-	font-size: inherit;
-	font-family: inherit;
+input:focus,
+input:hover {
+	border: 2px solid var(--color-outer);
 }
 
 textarea {
