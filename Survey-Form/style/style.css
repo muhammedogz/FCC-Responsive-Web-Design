@@ -1,6 +1,8 @@
 :root {
 	--color-outer: #f00808;
+	--color-underline: #ca5757;
 	--color-bg-form: #2f5c64;
+	--color-bg-form-opacity: rgba(47, 92, 100, 0.9);
 }
 
 * {
@@ -11,7 +13,19 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 
 	font-size: 1rem;
-	background-color: pink;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+
+	background-image: url(../image/github.jpg);
+	background-color: #4848e0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
 }
 
 body,
@@ -24,6 +38,12 @@ p {
 
 h1 {
 	font-size: 1.4em;
+}
+
+@media (min-width: 750px) {
+	h1 {
+		font-size: 3rem;
+	}
 }
 
 input,
@@ -39,14 +59,26 @@ button {
 
 .container {
 	width: 80%;
+	max-width: 1200px;
 	margin: 1em auto 0 auto;
+}
+
+@media (min-width: 750px) {
+	.container {
+		width: 60%;
+	}
+}
+
+.container-flex {
+	display: flex;
+	align-items: center;
 }
 
 .form-container {
 	width: 100%;
 	padding: 0.15em;
 	margin: 1em auto;
-	background-color: var(--color-outer);
+	border: 2px solid var(--color-outer);
 	border-radius: 1em;
 }
 
@@ -54,6 +86,7 @@ button {
 
 .form-head {
 	text-align: center;
+	color: #fff;
 }
 
 /* form */
@@ -62,8 +95,13 @@ form {
 	width: 100%;
 	padding: 2.2em;
 	color: #fff;
-	background-color: var(--color-bg-form);
+	background-color: var(--color-bg-form-opacity);
 	border-radius: 1em;
+}
+
+form > div {
+	margin: 1em 0;
+	padding: 0.2em;
 }
 
 input[type="text"],
@@ -72,8 +110,8 @@ input[type="number"],
 select,
 textarea {
 	width: 100%;
-	margin: 0.2em 0 1em 0;
-	padding: 0.4em;
+	margin-top: 0.2em;
+	padding: 0.5em;
 	background-color: #fff;
 	border-radius: 0.5em;
 }
@@ -83,8 +121,28 @@ label {
 }
 
 input:focus,
-input:hover {
+input:hover,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus {
 	border: 2px solid var(--color-outer);
+}
+
+.underline {
+	margin-bottom: 0.7em;
+	border-bottom: 2px solid var(--color-underline);
+}
+
+.container-flex label {
+	margin-right: 0.5em;
+}
+
+.container-flex label:nth-child(3),
+.container-flex label:nth-child(5) {
+	margin: 0 0.5em;
+	padding: 0 0.5em;
+	border-left: 3px solid var(--color-outer);
 }
 
 textarea {
@@ -92,4 +150,22 @@ textarea {
 	min-height: 10vh;
 	max-height: 15vh;
 	resize: vertical;
+}
+
+button {
+	display: inline-block;
+	padding: 1em 2em;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	background-color: var(--color-underline);
+	transform: scale(1);
+	text-align: center;
+	color: #fff;
+	transition: all 250ms;
+}
+
+button:hover {
+	transform: scale(1.05);
+	color: var(--color-bg-form);
 }
