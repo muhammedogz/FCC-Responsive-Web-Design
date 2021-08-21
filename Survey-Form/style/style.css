@@ -1,5 +1,6 @@
 :root {
 	--color-outer: #f00808;
+	--color-underline: #ca5757;
 	--color-bg-form: #2f5c64;
 }
 
@@ -42,6 +43,17 @@ button {
 	margin: 1em auto 0 auto;
 }
 
+@media (min-width: 750px) {
+	.container {
+		width: 60%;
+	}
+}
+
+.container-flex {
+	display: flex;
+	align-items: center;
+}
+
 .form-container {
 	width: 100%;
 	padding: 0.15em;
@@ -66,14 +78,19 @@ form {
 	border-radius: 1em;
 }
 
+form > div {
+	margin: 1em 0;
+	padding: 0.2em;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
 select,
 textarea {
 	width: 100%;
-	margin: 0.2em 0 1em 0;
-	padding: 0.4em;
+	margin-top: 0.2em;
+	padding: 0.5em;
 	background-color: #fff;
 	border-radius: 0.5em;
 }
@@ -89,6 +106,22 @@ textarea:focus,
 select:hover,
 select:focus {
 	border: 2px solid var(--color-outer);
+}
+
+.underline {
+	margin-bottom: 0.7em;
+	border-bottom: 2px solid var(--color-underline);
+}
+
+.container-flex label {
+	margin-right: 0.5em;
+}
+
+.container-flex label:nth-child(3),
+.container-flex label:nth-child(5) {
+	margin: 0 0.5em;
+	padding: 0 0.5em;
+	border-left: 3px solid var(--color-outer);
 }
 
 textarea {
