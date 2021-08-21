@@ -3,18 +3,15 @@
 }
 
 body {
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
+
+    background-color: pink;
 }
 
 h1,
-h2,
-h3 {
+p {
     margin: 0;
-}
-
-label {
-    margin-top: 1em;
-    display: block;
 }
 
 /* Typography */
