@@ -12,6 +12,11 @@ h3 {
     margin: 0;
 }
 
+label {
+    margin-top: 1em;
+    display: block;
+}
+
 /* Typography */
 
 
