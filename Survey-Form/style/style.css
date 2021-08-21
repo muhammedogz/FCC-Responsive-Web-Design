@@ -2,6 +2,7 @@
 	--color-outer: #f00808;
 	--color-underline: #ca5757;
 	--color-bg-form: #2f5c64;
+	--color-bg-form-opacity: rgba(47, 92, 100, 0.9);
 }
 
 * {
@@ -12,7 +13,19 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 
 	font-size: 1rem;
-	background-color: pink;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+
+	background-image: url(../image/github.jpg);
+	background-color: #4848e0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
 }
 
 body,
@@ -25,6 +38,12 @@ p {
 
 h1 {
 	font-size: 1.4em;
+}
+
+@media (min-width: 750px) {
+	h1 {
+		font-size: 3rem;
+	}
 }
 
 input,
@@ -40,6 +59,7 @@ button {
 
 .container {
 	width: 80%;
+	max-width: 1200px;
 	margin: 1em auto 0 auto;
 }
 
@@ -58,7 +78,7 @@ button {
 	width: 100%;
 	padding: 0.15em;
 	margin: 1em auto;
-	background-color: var(--color-outer);
+	border: 2px solid var(--color-outer);
 	border-radius: 1em;
 }
 
@@ -66,6 +86,7 @@ button {
 
 .form-head {
 	text-align: center;
+	color: #fff;
 }
 
 /* form */
@@ -74,7 +95,7 @@ form {
 	width: 100%;
 	padding: 2.2em;
 	color: #fff;
-	background-color: var(--color-bg-form);
+	background-color: var(--color-bg-form-opacity);
 	border-radius: 1em;
 }
 
