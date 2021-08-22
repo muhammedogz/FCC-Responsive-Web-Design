@@ -17,3 +17,11 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 - [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Survey-Form)
 
 - [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+
+## Landing Page
+
+- [Live Demo](https://muhammedogz.github.io/FCC-Responsive-Web-Design/Landing-Page/index.html)
+
+- [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Landing-Page)
+
+- [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
