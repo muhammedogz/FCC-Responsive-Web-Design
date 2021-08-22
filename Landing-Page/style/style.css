@@ -1,4 +1,5 @@
 :root {
+	--color-red: #e50914;
 }
 
 * {
@@ -9,6 +10,11 @@ body {
 	margin: 0;
 
 	background-color: pink;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
 
 /* typography */
@@ -24,16 +30,50 @@ body {
 	width: 75%;
 }
 
+.container-flex {
+	display: flex;
+	flex-direction: column;
+}
+
 /* header and nav */
 
 header {
+	background-color: #000;
+}
+
+.logo {
+	margin: 0 auto;
 }
 
 nav {
+	padding: 1em;
 }
 
 nav ul {
+	align-items: center;
+
+	list-style: none;
+
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
 }
 
 nav ul li {
+	margin: 0.6em auto;
 }
+
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.7em;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+	color: var(--color-red);
+}
+
+/** MAIN **/
+
+/* Features */
