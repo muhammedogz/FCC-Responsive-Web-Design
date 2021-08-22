@@ -1,6 +1,6 @@
 # FreeCodeCamp Responsive Web Design Projects
 
-For more info about [course and projects](https://www.freecodecamp.org/learn/responsive-web-design).
+For more info about the [course and projects](https://www.freecodecamp.org/learn/responsive-web-design).
 
 ## Tribute-Page
 
