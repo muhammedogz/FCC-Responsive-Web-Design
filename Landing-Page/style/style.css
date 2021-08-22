@@ -20,7 +20,8 @@ img {
 input,
 label,
 button,
-textarea {
+textarea,
+a {
 	font-size: inherit;
 	font-weight: inherit;
 }
@@ -72,13 +73,17 @@ nav ul li {
 }
 
 nav ul a {
+	display: block;
 	color: #fff;
 	text-decoration: none;
 	font-size: 1.7em;
+	transform: scale(1);
+	transition: transform 0.01s ease-in-out;
 }
 
 nav ul a:hover,
 nav ul a:focus {
+	transform: scale(1.15);
 	color: var(--color-red);
 }
 
