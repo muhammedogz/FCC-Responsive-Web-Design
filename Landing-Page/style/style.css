@@ -44,10 +44,19 @@ a {
 	flex-direction: column;
 }
 
+@media (min-width: 680px) {
+	.container-flex {
+		flex-direction: row;
+	}
+}
+
 /* header and nav */
 
 header {
 	background-color: #000;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .logo {
@@ -91,6 +100,10 @@ nav ul a:focus {
 
 /* intro */
 
+main {
+	padding-top: 18em;
+}
+
 .intro {
 	background-color: bisque;
 	padding: 1em 0;
@@ -113,7 +126,7 @@ nav ul a:focus {
 	width: 80%;
 }
 
-.intro button {
+#submit {
 	background: none;
 	border: none;
 
@@ -124,7 +137,7 @@ nav ul a:focus {
 	cursor: pointer;
 }
 
-.intro button:hover {
+#submit:hover {
 	background-color: var(--color-red);
 }
 

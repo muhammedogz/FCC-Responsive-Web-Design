@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <header>
-        <nav class="container container-flex">
-            <a class="logo" href="index.html"><img src="images/logo.png" alt="oldflix logo"></a>
+    <header id="header">
+        <nav class="container container-flex" id="nav-bar">
+            <a class="logo" href="index.html"><img id="header-img" src="images/logo.png" alt="oldflix logo"></a>
             <ul class="container-flex">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -28,19 +28,20 @@
                 consectetur aspernatur aliquam odio harum quo dolorem corrupti maiores, doloremque quas sunt assumenda
                 nam veniam?
             </p>
-            <form action="#" method="POST">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
                 <label for="email">Subscribe to our newsletter!</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email">
-                <button type="submit">Subscribe!</button>
+                <input id="submit" type="submit">
             </form>
         </section>
-        <section class="features">
+        <section id="features" class="features">
 
         </section>
-        <section class="how-it-works">
+        <section id="how-it-works" class="how-it-works">
+            <iframe id="video" src="#" frameborder="0"></iframe>
 
         </section>
-        <section class="pricing">
+        <section id="pricing" class="pricing">
 
         </section>
     </main>
