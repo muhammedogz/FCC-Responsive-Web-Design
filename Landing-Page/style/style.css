@@ -7,14 +7,20 @@
 }
 
 body {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 1rem;
 	margin: 0;
-
-	background-color: pink;
 }
 
 img {
 	display: block;
 	max-width: 100%;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
 }
 
 input,
@@ -28,6 +34,18 @@ a {
 
 /* typography */
 
+h1 {
+	font-size: 1.3em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+p {
+	font-size: 0.7em;
+}
+
 /* container */
 
 .container {
@@ -36,7 +54,7 @@ a {
 }
 
 .container-main {
-	width: 75%;
+	width: 90%;
 }
 
 .container-flex {
@@ -56,6 +74,7 @@ header {
 	background-color: #000;
 	position: fixed;
 	top: 0;
+	z-index: 2;
 	width: 100%;
 }
 
@@ -105,8 +124,11 @@ main {
 }
 
 .intro {
-	background-color: bisque;
 	padding: 1em 0;
+}
+
+.intro h1 {
+	text-align: center;
 }
 
 .intro form {
@@ -117,7 +139,8 @@ main {
 
 .intro form label {
 	display: block;
-	margin-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 0.3em;
 }
 
 .intro form input {
@@ -127,6 +150,7 @@ main {
 }
 
 #submit {
+	display: block;
 	background: none;
 	border: none;
 
@@ -135,10 +159,13 @@ main {
 	margin-top: 0.3em;
 	padding: 1.2em 2em;
 	cursor: pointer;
+	transform: scale(1);
+	transition: all 250ms;
 }
 
 #submit:hover {
 	background-color: var(--color-red);
+	transform: scale(1.07);
 }
 
 /* Features */
