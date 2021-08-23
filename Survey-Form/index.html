@@ -49,16 +49,16 @@
 
                 <div>
                     <p class="underline">Would You Recommend FCC to a Friend?</p>
-                    <div class="container-flex">
+                    <div class="container-flex recommend">
 
-                        <label for="yes">Yes</label>
                         <input type="radio" id="yes" value="yes" name="recommend" checked>
+                        <label for="yes">Yes</label>
 
-                        <label for="maybe">Maybe</label>
                         <input type="radio" id="maybe" value="maybe" name="recommend">
+                        <label for="maybe">Maybe</label>
 
-                        <label for="not">Not Sure</label>
                         <input type="radio" id="not" value="not" name="recommend">
+                        <label for="not">Not Sure</label>
                     </div>
                 </div>
 
@@ -72,13 +72,27 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="improve">
                     <p class="underline">What would you like to see improved?</p>
-                    <label for="front-end">Front-end Projects</label>
-                    <input type="checkbox" name="improve" id="front-end" value="front-end">
+                    <div>
+                        <input type="checkbox" name="improve" id="front-end" value="front-end">
+                        <label for="front-end">Front-end Projects</label>
+                    </div>
 
-                    <label for="back-end">Back-end Projects</label>
-                    <input type="checkbox" name="improve" id="back-end" value="back-end">
+                    <div>
+                        <input type="checkbox" name="improve" id="back-end" value="back-end">
+                        <label for="back-end">Back-end Projects</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="improve" id="challenges" value="challenges">
+                        <label for="challenges">Challenges</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="improve" id="videos" value="videos">
+                        <label for="videos">Videos</label>
+                    </div>
                 </div>
 
                 <div>

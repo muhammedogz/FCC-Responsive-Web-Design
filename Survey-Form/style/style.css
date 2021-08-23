@@ -134,15 +134,24 @@ select:focus {
 	border-bottom: 2px solid var(--color-underline);
 }
 
-.container-flex label {
-	margin-right: 0.5em;
+.recommend label:nth-child(6) {
+	margin-left: 0.5em;
 }
 
-.container-flex label:nth-child(3),
-.container-flex label:nth-child(5) {
-	margin: 0 0.5em;
+.recommend label:nth-child(2),
+.recommend label:nth-child(4) {
+	margin: 0 0.25em;
 	padding: 0 0.5em;
-	border-left: 3px solid var(--color-outer);
+	border-right: 3px solid var(--color-outer);
+}
+
+.improve label {
+	display: inline-block;
+}
+
+.improve div {
+	display: block;
+	margin: 0.3em 0;
 }
 
 textarea {
