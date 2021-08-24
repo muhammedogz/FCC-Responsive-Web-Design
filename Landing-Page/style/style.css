@@ -297,3 +297,16 @@ main {
 	transform: scale(1.07);
 	background-color: rebeccapurple;
 }
+
+/* footer */
+
+footer {
+	background-color: rgba(128, 128, 128, 0.5);
+	text-align: center;
+	padding: 1em;
+}
+
+footer span {
+	background-color: var(--color-red);
+	color: #fff;
+}
