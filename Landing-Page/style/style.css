@@ -1,10 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
 :root {
 	--color-red: #e50914;
 	--color-red-opacity: rgba(229, 9, 20, 0.6);
 }
 
-* {
-	box-sizing: border-box;
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 10rem;
 }
 
 body {
@@ -129,6 +134,10 @@ main {
 	background-color: antiquewhite;
 	border-bottom: 2px solid #e50914;
 	margin-bottom: 1em;
+} */
+
+/* main > section:target {
+	outline: 2px solid blue;
 } */
 
 /* intro */
