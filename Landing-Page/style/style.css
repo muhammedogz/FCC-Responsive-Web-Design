@@ -1,5 +1,6 @@
 :root {
 	--color-red: #e50914;
+	--color-red-opacity: rgba(229, 9, 20, 0.6);
 }
 
 * {
@@ -226,7 +227,9 @@ main {
 .pricing {
 	margin-top: 1em;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .pricing-title {
@@ -236,32 +239,61 @@ main {
 
 .price-card {
 	display: block;
-	width: 25%;
+	width: 80%;
 
-	background-color: #662528;
-	border-radius: 0.3em;
+	background-color: var(--color-red-opacity);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	border-radius: 1em;
 
-	padding-bottom: 5em;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
 
 	color: #fff;
 	text-align: center;
 	text-transform: capitalize;
 }
 
-.price-card p {
-	margin: 3em 0;
-	align-self: center;
+.price-card:hover {
+	background-color: var(--color-red);
 }
 
 .price-card h2 {
-	color: #c6d3ce;
+	color: #aee4cf;
 	background-color: #000;
-	border-radius: 0.5em;
+	margin-inline: 1em;
+	margin-block: 0.3em;
+	border-radius: 2em 0 2em 0;
+	border-bottom: 1px solid var(--color-red);
 }
 
 .price {
-	margin: 10em;
+	margin: 0;
 	border-top: 2px solid rebeccapurple;
 	background-color: #353232;
-	margin-bottom: 0.3em;
+	border-radius: 1em 0 1em 0;
+}
+
+.price-info {
+	margin: 3em 0;
+	width: 70%;
+	margin-inline: auto;
+	align-self: center;
+}
+
+.price-card button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background-color: #353232;
+	border-radius: 0.3em;
+	padding: 0.7em 2em;
+	transform: scale(1);
+	transition: all 250ms;
+}
+
+.price-card button:hover {
+	transform: scale(1.07);
+	background-color: rebeccapurple;
 }
