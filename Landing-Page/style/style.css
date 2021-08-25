@@ -65,6 +65,7 @@ li {
 /* container */
 
 .container {
+	max-width: 900px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -76,12 +77,6 @@ li {
 .container-flex {
 	display: flex;
 	flex-direction: column;
-}
-
-@media (min-width: 680px) {
-	.container-flex {
-		flex-direction: row;
-	}
 }
 
 /* header and nav */
@@ -328,4 +323,42 @@ footer {
 footer span {
 	background-color: var(--color-red);
 	color: #fff;
+}
+
+/* media query */
+
+@media (min-width: 680px) {
+	html {
+		scroll-padding-top: 5rem;
+	}
+
+	/* layout */
+
+	.container-main {
+		width: 60%;
+	}
+
+	.container-flex {
+		flex-direction: row;
+	}
+
+	/* nav */
+
+	nav {
+		align-items: center;
+	}
+
+	nav ul {
+		margin-left: 0;
+	}
+
+	nav ul li {
+		margin-inline: 1em;
+	}
+
+	/* main */
+
+	main {
+		padding-top: 5em;
+	}
 }
