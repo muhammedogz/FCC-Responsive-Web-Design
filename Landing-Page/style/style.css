@@ -5,11 +5,12 @@
 :root {
 	--color-red: #e50914;
 	--color-red-opacity: rgba(229, 9, 20, 0.6);
+	--scroll-padding: 15rem;
 }
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 10rem;
+	scroll-padding-top: var(--scroll-padding);
 }
 
 body {
@@ -17,11 +18,13 @@ body {
 	font-size: 1rem;
 	margin: 0;
 	line-height: 1.3;
+	background-color: #e7e4e4;
 }
 
 img {
 	display: block;
-	max-width: 100%;
+	max-width: 75%;
+	margin: auto;
 }
 
 h1,
@@ -92,7 +95,7 @@ header {
 }
 
 nav {
-	padding: 1em;
+	padding-bottom: 1em;
 }
 
 nav ul {
@@ -113,7 +116,7 @@ nav ul a {
 	display: block;
 	color: #fff;
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1em;
 	transform: scale(1);
 	transition: transform 0.01s ease-in-out;
 }
@@ -127,7 +130,7 @@ nav ul a:focus {
 /** MAIN **/
 
 main {
-	padding-top: 18em;
+	padding-top: 13em;
 }
 
 /* main > section {
@@ -148,6 +151,7 @@ main {
 
 .intro h1 {
 	text-align: center;
+	margin-bottom: 0.5em;
 }
 
 .intro form {
@@ -199,6 +203,7 @@ main {
 
 .emoji-features {
 	padding: 1em;
+	margin-right: 1em;
 }
 
 .emoji-div {
@@ -215,7 +220,7 @@ main {
 
 .emoji-div > p {
 	font-size: 2em;
-	margin: 0 2em;
+	margin: 0 0.3em;
 }
 
 /* how it works */
@@ -256,7 +261,7 @@ main {
 	border-radius: 1em;
 
 	margin-bottom: 2em;
-	padding-bottom: 1em;
+	padding-bottom: 3em;
 
 	color: #fff;
 	text-align: center;
@@ -297,6 +302,7 @@ main {
 	color: #fff;
 	background-color: #353232;
 	border-radius: 0.3em;
+	margin-top: 1.5em;
 	padding: 0.7em 2em;
 	transform: scale(1);
 	transition: all 250ms;
