@@ -1,9 +1,17 @@
-:root {
-	--color-red: #e50914;
-}
-
 * {
 	box-sizing: border-box;
+}
+
+:root {
+	--color-red: #e50914;
+	--color-red-opacity: rgba(229, 9, 20, 0.6);
+	--color-red-opacity-hover: rgba(229, 9, 20, 0.8);
+	--scroll-padding: 14rem;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-padding);
 }
 
 body {
@@ -11,11 +19,16 @@ body {
 	font-size: 1rem;
 	margin: 0;
 	line-height: 1.3;
+	background-color: #3d3b3b;
+	background-image: url(../images/Netflix-Background.jpg);
+	background-blend-mode: multiply;
+	color: #fff;
 }
 
 img {
 	display: block;
-	max-width: 100%;
+	max-width: 75%;
+	margin: auto;
 }
 
 h1,
@@ -52,6 +65,7 @@ li {
 /* container */
 
 .container {
+	max-width: 900px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -63,12 +77,6 @@ li {
 .container-flex {
 	display: flex;
 	flex-direction: column;
-}
-
-@media (min-width: 680px) {
-	.container-flex {
-		flex-direction: row;
-	}
 }
 
 /* header and nav */
@@ -86,7 +94,7 @@ header {
 }
 
 nav {
-	padding: 1em;
+	padding-bottom: 1em;
 }
 
 nav ul {
@@ -107,7 +115,7 @@ nav ul a {
 	display: block;
 	color: #fff;
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1em;
 	transform: scale(1);
 	transition: transform 0.01s ease-in-out;
 }
@@ -121,13 +129,17 @@ nav ul a:focus {
 /** MAIN **/
 
 main {
-	padding-top: 18em;
+	padding-top: 13em;
 }
 
 /* main > section {
 	background-color: antiquewhite;
 	border-bottom: 2px solid #e50914;
 	margin-bottom: 1em;
+} */
+
+/* main > section:target {
+	outline: 2px solid blue;
 } */
 
 /* intro */
@@ -138,6 +150,7 @@ main {
 
 .intro h1 {
 	text-align: center;
+	margin-bottom: 0.5em;
 }
 
 .intro form {
@@ -189,6 +202,7 @@ main {
 
 .emoji-features {
 	padding: 1em;
+	margin-right: 1em;
 }
 
 .emoji-div {
@@ -205,7 +219,7 @@ main {
 
 .emoji-div > p {
 	font-size: 2em;
-	margin: 0 2em;
+	margin: 0 0.3em;
 }
 
 /* how it works */
@@ -226,7 +240,9 @@ main {
 .pricing {
 	margin-top: 1em;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .pricing-title {
@@ -236,32 +252,141 @@ main {
 
 .price-card {
 	display: block;
-	width: 25%;
+	width: 80%;
 
-	background-color: #662528;
-	border-radius: 0.3em;
+	background-color: var(--color-red-opacity);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	border-radius: 1em;
 
-	padding-bottom: 5em;
+	margin-bottom: 2em;
+	padding-bottom: 3em;
 
 	color: #fff;
 	text-align: center;
 	text-transform: capitalize;
 }
 
-.price-card p {
-	margin: 3em 0;
-	align-self: center;
+.price-card:hover {
+	background-color: var(--color-red-opacity-hover);
 }
 
 .price-card h2 {
-	color: #c6d3ce;
+	color: #aee4cf;
 	background-color: #000;
-	border-radius: 0.5em;
+	margin-inline: 1em;
+	margin-block: 0.3em;
+	border-radius: 2em 0 2em 0;
+	border-bottom: 1px solid var(--color-red);
 }
 
 .price {
-	margin: 10em;
+	margin: 0;
 	border-top: 2px solid rebeccapurple;
 	background-color: #353232;
-	margin-bottom: 0.3em;
+	border-radius: 1em 0 1em 0;
+}
+
+.price-info {
+	margin: 3em 0;
+	width: 70%;
+	margin-inline: auto;
+	align-self: center;
+}
+
+.price-card button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background-color: #353232;
+	border-radius: 0.3em;
+	margin-top: 1.5em;
+	padding: 0.7em 2em;
+	transform: scale(1);
+	transition: all 250ms;
+}
+
+.price-card button:hover {
+	transform: scale(1.07);
+	background-color: rebeccapurple;
+}
+
+/* footer */
+
+footer {
+	background-color: rgba(128, 128, 128, 0.5);
+	text-align: center;
+	padding: 1em;
+}
+
+footer span {
+	background-color: var(--color-red);
+	color: #fff;
+}
+
+/* media query */
+
+@media (min-width: 680px) {
+	html {
+		scroll-padding-top: 5rem;
+	}
+
+	body {
+		font-size: 1.1rem;
+	}
+
+	/* layout */
+
+	.container-main {
+		width: 60%;
+	}
+
+	.container-flex {
+		flex-direction: row;
+	}
+
+	/* nav */
+
+	nav {
+		align-items: center;
+	}
+
+	nav ul {
+		margin-left: 0;
+	}
+
+	nav ul li {
+		margin-inline: 1em;
+	}
+
+	/* main */
+
+	main {
+		padding-top: 5em;
+	}
+
+	/* how it works */
+
+	.how-it-works {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	/* pricing */
+
+	.pricing {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.price-card {
+		width: 30%;
+	}
+}
+
+@media (min-width: 900px) {
+	.price-card {
+		width: 25%;
+	}
 }
