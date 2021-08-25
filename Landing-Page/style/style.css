@@ -332,6 +332,10 @@ footer span {
 		scroll-padding-top: 5rem;
 	}
 
+	body {
+		font-size: 1.1rem;
+	}
+
 	/* layout */
 
 	.container-main {
@@ -360,5 +364,29 @@ footer span {
 
 	main {
 		padding-top: 5em;
+	}
+
+	/* how it works */
+
+	.how-it-works {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	/* pricing */
+
+	.pricing {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.price-card {
+		width: 30%;
+	}
+}
+
+@media (min-width: 900px) {
+	.price-card {
+		width: 25%;
 	}
 }
