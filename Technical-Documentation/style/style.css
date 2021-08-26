@@ -3,9 +3,10 @@
 }
 
 :root {
-	--color-white: #fff;
-	--color-head: #fff;
-	--color-link: #fff;
+	--bg-nav: #eeeaea;
+	--bg-nav-head: #f3c9c9;
+	--color-link: #9e5d5d;
+	--color-link-hover: #c94040;
 	--color-nav-border: black;
 	--color-nav-li-border: gray;
 }
@@ -23,6 +24,10 @@ p {
 
 /* typography */
 
+nav a {
+	font-size: 1.25rem;
+}
+
 /* layout */
 
 .container {
@@ -34,18 +39,19 @@ p {
 
 nav {
 	margin-bottom: 1em;
+	background-color: var(--bg-nav);
 }
 
 nav header {
 	text-align: center;
 	padding: 1em;
-	background-color: var(--color-head);
+	background-color: var(--bg-nav-head);
 }
 
 nav ul {
 	list-style: none;
 	overflow-y: auto;
-	height: 10em;
+	height: 16em;
 
 	margin: 0;
 	padding: 0;
@@ -55,12 +61,23 @@ nav ul {
 nav ul li {
 	display: block;
 	width: 100%;
-	padding: 1.2em;
+	padding: 1.3em;
+	padding-inline: 4em;
 	border-bottom: 0.5px solid var(--color-nav-li-border);
 }
 
 nav ul li:last-child {
 	border: none;
+}
+
+nav a {
+	color: var(--color-link);
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+	color: var(--color-link-hover);
 }
 
 /* media */
