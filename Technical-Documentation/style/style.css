@@ -15,6 +15,15 @@
 	--color-nav-li-border: gray;
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-margin-top: 1em;
+}
+
+main section:target {
+	border: 2px solid var(--color-link);
+}
+
 body {
 	font-family: "Nunito", sans-serif;
 	margin: 0;
