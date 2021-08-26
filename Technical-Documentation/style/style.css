@@ -13,6 +13,7 @@
 
 body {
 	margin: 0;
+	line-height: 1.4;
 }
 
 h1,
@@ -38,7 +39,6 @@ nav a {
 /* nav */
 
 nav {
-	margin-bottom: 1em;
 	background-color: var(--bg-nav);
 }
 
@@ -78,6 +78,25 @@ nav a {
 nav a:hover,
 nav a:focus {
 	color: var(--color-link-hover);
+}
+
+/* main */
+
+main {
+	background-color: var(--bg-nav-head);
+}
+
+main > * {
+	width: 85%;
+	margin: 0 auto;
+}
+
+main header {
+	margin-block: 0.7em;
+}
+
+main header:first-child {
+	margin-top: 1.5em;
 }
 
 /* media */
