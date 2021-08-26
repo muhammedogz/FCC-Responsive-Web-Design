@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <link rel="stylesheet" href="style/style.css">
     <title>Awesome Technical Documentation</title>
 </head>
@@ -130,9 +133,12 @@
                 <div>
                     To get started with writing JavaScript, open the Scratchpad and write your
                     first "Hello world" JavaScript code:
-                    <code>function greetMe(yourName) { alert("Hello " + yourName); }
-                  greetMe("World");
-                </code>
+                    <pre>
+                        <code>
+function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");
+                          </code>
+                    </pre>
 
                     Select the code in the pad and hit Ctrl+R to watch it unfold in your
                     browser!
