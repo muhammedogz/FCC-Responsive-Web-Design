@@ -37,10 +37,14 @@ h2 {
 }
 
 h1 {
-	font-size: clamp(1.5rem, 1.5rem + 1vw, 3rem);
+	font-size: clamp(1.5rem, 1.5rem + 1vw, 1.9rem);
 }
 
 h2 {
+	font-size: clamp(1rem, 1rem + 0.3vw, 1.2rem);
+}
+
+main h2 {
 	font-size: clamp(1.25rem, 1.25rem + 0.3vw, 1.5rem);
 }
 
@@ -174,5 +178,31 @@ footer {
 @media (min-width: 700px) {
 	.container {
 		flex-direction: row;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		width: clamp(17em, 17em + 1vh, 20em);
+		height: 100%;
+		padding-top: 1em;
+		border-right: 2px solid var(--color-nav-border);
+	}
+
+	nav ul {
+		height: initial;
+		overflow-y: initial;
+	}
+
+	nav ul li a {
+		padding-block: 0.4em;
+		padding-inline: 0.5em;
+		padding-left: 1.5em;
+	}
+
+	main {
+		margin-left: 16em;
 	}
 }
