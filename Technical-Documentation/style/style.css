@@ -4,6 +4,10 @@
 
 :root {
 	--color-white: #fff;
+	--color-head: #fff;
+	--color-link: #fff;
+	--color-nav-border: black;
+	--color-nav-li-border: gray;
 }
 
 body {
@@ -29,27 +33,34 @@ p {
 /* nav */
 
 nav {
-	background-color: aliceblue;
-	overflow-y: auto;
-	height: 10em;
 	margin-bottom: 1em;
-	border-bottom: 1px solid black;
+}
+
+nav header {
+	text-align: center;
+	padding: 1em;
+	background-color: var(--color-head);
 }
 
 nav ul {
 	list-style: none;
+	overflow-y: auto;
+	height: 10em;
 
 	margin: 0;
 	padding: 0;
-	border: 2px solid red;
+	border-block: 1px solid var(--color-nav-border);
 }
 
 nav ul li {
 	display: block;
 	width: 100%;
 	padding: 1.2em;
-	border-block: 0.5px solid black;
-	border-inline: 0.5px solid gray;
+	border-bottom: 0.5px solid var(--color-nav-li-border);
+}
+
+nav ul li:last-child {
+	border: none;
 }
 
 /* media */
