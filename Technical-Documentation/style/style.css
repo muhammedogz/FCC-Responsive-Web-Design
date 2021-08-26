@@ -15,6 +15,7 @@
 }
 
 body {
+	font-family: "Nunito", sans-serif;
 	margin: 0;
 	line-height: 1.4;
 }
@@ -27,6 +28,11 @@ p {
 }
 
 /* typography */
+
+h1,
+h2 {
+	font-family: "Roboto Mono", monospace;
+}
 
 nav a {
 	font-size: 1.25rem;
@@ -108,6 +114,10 @@ main header:first-child {
 
 main p {
 	margin-block: 1em;
+}
+
+main li {
+	margin-bottom: 0.5em;
 }
 
 pre code {
