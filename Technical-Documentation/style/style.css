@@ -182,7 +182,7 @@ footer {
 	text-decoration: none;
 }
 
-/* media */
+/* media for desktop */
 
 @media (min-width: 700px) {
 	.container {
@@ -213,5 +213,14 @@ footer {
 
 	main {
 		margin-left: 16em;
+	}
+}
+
+/* media for desktop but smaller height */
+
+@media (max-height: 700px) {
+	nav ul {
+		height: 300px;
+		overflow-y: scroll;
 	}
 }
