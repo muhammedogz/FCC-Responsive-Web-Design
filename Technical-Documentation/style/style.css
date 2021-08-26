@@ -18,3 +18,18 @@ p {
 }
 
 /* typography */
+
+/* layout */
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* media */
+
+@media (min-width: 700px) {
+	.container {
+		flex-direction: row;
+	}
+}
