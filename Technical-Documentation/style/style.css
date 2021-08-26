@@ -61,8 +61,7 @@ nav ul {
 nav ul li {
 	display: block;
 	width: 100%;
-	padding: 1.3em;
-	padding-inline: 4em;
+
 	border-bottom: 0.5px solid var(--color-nav-li-border);
 }
 
@@ -71,6 +70,10 @@ nav ul li:last-child {
 }
 
 nav a {
+	display: block;
+	width: 100%;
+	padding: 1.3em;
+	padding-inline: 3em;
 	color: var(--color-link);
 	text-decoration: none;
 }
