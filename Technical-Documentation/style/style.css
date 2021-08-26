@@ -26,6 +26,32 @@ p {
 	flex-direction: column;
 }
 
+/* nav */
+
+nav {
+	background-color: aliceblue;
+	overflow-y: auto;
+	height: 10em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid black;
+}
+
+nav ul {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+	border: 2px solid red;
+}
+
+nav ul li {
+	display: block;
+	width: 100%;
+	padding: 1.2em;
+	border-block: 0.5px solid black;
+	border-inline: 0.5px solid gray;
+}
+
 /* media */
 
 @media (min-width: 700px) {
