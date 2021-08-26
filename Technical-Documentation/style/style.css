@@ -5,6 +5,7 @@
 :root {
 	--bg-nav: #eeeaea;
 	--bg-nav-head: #f3c9c9;
+	--bg-main: #d4cece;
 	--color-link: #9e5d5d;
 	--color-link-hover: #c94040;
 	--color-nav-border: black;
@@ -86,7 +87,7 @@ nav a:focus {
 /* main */
 
 main {
-	background-color: var(--bg-nav-head);
+	background-color: var(--bg-main);
 }
 
 main > * {
