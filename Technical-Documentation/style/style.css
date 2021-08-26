@@ -185,7 +185,7 @@ footer {
 		top: 0;
 		left: 0;
 
-		width: clamp(17em, 17em + 1vh, 20em);
+		width: clamp(17em, 17em + 0.7vh, 20em);
 		height: 100%;
 		padding-top: 1em;
 		border-right: 2px solid var(--color-nav-border);
