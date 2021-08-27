@@ -194,15 +194,16 @@ footer {
 		top: 0;
 		left: 0;
 
-		width: clamp(17em, 17em + 0.7vh, 20em);
+		width: 17em;
+		max-width: 20em;
 		height: 100%;
 		padding-top: 1em;
 		border-right: 2px solid var(--color-nav-border);
 	}
 
 	nav ul {
-		height: initial;
-		overflow-y: initial;
+		height: 72%;
+		overflow-y: auto;
 	}
 
 	nav ul li a {
@@ -217,10 +218,10 @@ footer {
 }
 
 /* media for desktop but smaller height */
-
+/* 
 @media (max-height: 700px) {
 	nav ul {
 		height: 300px;
 		overflow-y: scroll;
 	}
-}
+} */
