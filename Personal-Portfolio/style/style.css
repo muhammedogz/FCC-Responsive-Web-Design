@@ -1,0 +1,13 @@
+:root {
+	--color-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
