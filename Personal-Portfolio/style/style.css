@@ -11,3 +11,27 @@
 body {
 	margin: 0;
 }
+
+/* nav */
+
+nav {
+	position: fixed;
+	background-color: aqua;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/* main */
+
+/*-- Welcome Section --*/
+
+#welcome-section {
+	background-color: aliceblue;
+	height: 100vh;
+}
+
+/* media */
+
+@media (min-width: 680px) {
+}
