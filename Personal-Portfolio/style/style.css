@@ -24,11 +24,16 @@ nav {
 
 /* main */
 
+main {
+	margin-top: 3em;
+}
+
 /*-- Welcome Section --*/
 
-#welcome-section {
+section {
 	background-color: aliceblue;
 	height: 100vh;
+	border: 5px solid black;
 }
 
 /* media */
