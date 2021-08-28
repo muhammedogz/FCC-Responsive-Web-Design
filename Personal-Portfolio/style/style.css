@@ -9,6 +9,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 3.5em;
+}
+
 body {
 	font-size: 1rem;
 	margin: 0;
