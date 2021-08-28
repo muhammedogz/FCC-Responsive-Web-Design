@@ -69,12 +69,33 @@ main {
 	margin-top: 3.4em;
 }
 
-/*-- Welcome Section --*/
-
 section {
 	height: 100vh;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	border: 2px solid black;
+}
+
+/*-- Welcome Section --*/
+
+.welcome {
+	font-size: 2.2em;
+	color: white;
+	text-align: center;
+}
+
+.welcome a {
+	text-decoration: none;
+	color: var(--color-link);
+}
+
+.welcome div * {
+	display: block;
 }
 
 /* media */
