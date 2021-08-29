@@ -11,7 +11,7 @@
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 3.5em;
+	scroll-padding-top: 7em;
 }
 
 body {
@@ -42,6 +42,18 @@ p {
 
 nav ul li a {
 	font-size: 1.225em;
+}
+
+.welcome {
+	font-size: clamp(2.2em, 1vw + 1.5em, 5em);
+}
+
+.projects h2 {
+	font-size: clamp(1rem, 5vw + 1rem, 2rem);
+}
+
+.projects > h2 {
+	font-size: clamp(2rem, 1vw + 1.5rem, 4rem);
 }
 
 /* nav */
@@ -95,7 +107,6 @@ section {
 /*-- Welcome Section --*/
 
 .welcome {
-	font-size: 2.2em;
 	color: white;
 	text-align: center;
 	background-color: #481872;
@@ -170,6 +181,7 @@ section {
 
 .projects {
 	width: 80%;
+	margin-block: 13em;
 }
 
 .projects > h2 {
@@ -181,6 +193,7 @@ section {
 .project-tile {
 	margin-block: 3em;
 	text-align: center;
+	padding-top: 1em;
 	border-bottom: 5px solid #481872;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -191,6 +204,10 @@ section {
 	margin-top: 1em;
 	transform: scale(1);
 	transition: transform 250ms ease-in-out;
+}
+
+.project-tile h2 {
+	margin-bottom: 0.4em;
 }
 
 .project-tile img:hover {
@@ -236,9 +253,17 @@ footer a:hover {
 	background-color: #ff3cac;
 }
 
+footer:target {
+	border: 2px solid blue;
+}
+
 /* media */
 
-@media (min-width: 680px) {
+@media (min-width: 785px) {
+	.projects {
+		margin: 0 auto;
+	}
+
 	.projects > div {
 		display: flex;
 		align-items: baseline;
