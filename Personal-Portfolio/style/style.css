@@ -28,7 +28,7 @@ body {
 
 img {
 	display: block;
-	min-width: 100%;
+	max-width: 100%;
 }
 
 /* typography */
@@ -79,7 +79,6 @@ section {
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
-	z-index: 999999;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -174,6 +173,7 @@ section::after {
 }
 
 .down-arrow {
+	margin: 0 auto;
 	width: 50%;
 }
 
