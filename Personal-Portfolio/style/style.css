@@ -31,6 +31,12 @@ img {
 	max-width: 100%;
 }
 
+h1,
+h2,
+p {
+	margin: 0;
+}
+
 /* typography */
 
 nav ul li a {
@@ -106,6 +112,10 @@ section {
 	display: block;
 }
 
+.welcome > * {
+	margin-bottom: 1em;
+}
+
 .name::before,
 .title::before {
 	transform: scaleX(0);
@@ -139,6 +149,7 @@ section {
 
 .name,
 .title {
+	margin-top: 1em;
 	position: relative;
 }
 
@@ -156,22 +167,44 @@ section {
 	transform: scale(1.2);
 }
 
-/* about me section */
+/* projects section */
 
-.about-me {
-	font-size: 1.6em;
+.projects {
+	width: 80%;
+}
+
+.project-tile {
+	margin-block: 1em;
 	text-align: center;
+	border-bottom: 5px solid #481872;
 }
 
-.about-me a {
-	display: block;
+.project-tile img {
+	margin-top: 1em;
+	transform: scale(1);
+	transition: transform 250ms ease-in-out;
+}
+
+.project-tile img:hover {
+	transform: scale(1.05);
+}
+
+.project-footer {
+	background-color: wheat;
+	padding: 0.3em;
+	padding-top: 0.6em;
+	display: flex;
+	justify-content: center;
+	gap: 1.4em;
+}
+
+.project-footer a {
 	text-decoration: none;
-	color: var(--color-link);
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
 }
 
-.about-me div {
-	margin-block: 3em;
-}
 /* footer */
 
 footer {
