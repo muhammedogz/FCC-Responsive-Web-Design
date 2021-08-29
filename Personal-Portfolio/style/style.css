@@ -142,6 +142,20 @@ section {
 	position: relative;
 }
 
+.down-arrow {
+	width: 20%;
+}
+
+.down-arrow a {
+	display: inline-block;
+	transform: scale(1);
+	transition: all 250ms;
+}
+
+.down-arrow a:hover {
+	transform: scale(1.2);
+}
+
 /* about me section */
 
 .about-me {
@@ -158,12 +172,6 @@ section {
 .about-me div {
 	margin-block: 3em;
 }
-
-.down-arrow {
-	margin: 0 auto;
-	width: 50%;
-}
-
 /* footer */
 
 footer {
