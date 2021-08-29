@@ -1,5 +1,10 @@
 # FreeCodeCamp Responsive Web Design Projects
 
+This course aims to teach responsive web design with HTML and CSS.
+In order to get certificate of this course, students have to complete 5 responsive web page.
+
+Here is my projects.
+
 For more info about the [course and projects](https://www.freecodecamp.org/learn/responsive-web-design).
 
 ## Tribute-Page
@@ -8,7 +13,7 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 
 - [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Tribute-Page)
 
-- [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+- [Project Info](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 
 ## Survey-Form
 
@@ -16,7 +21,7 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 
 - [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Survey-Form)
 
-- [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+- [Project Info](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 
 ## Landing Page
 
@@ -24,7 +29,7 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 
 - [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Landing-Page)
 
-- [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
+- [Project Info](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 
 ## Technical Documentation
 
@@ -32,7 +37,7 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 
 - [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Technical-Documentation)
 
-- [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+- [Project Info](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
   
 ### Personal Portfolio
 
@@ -40,5 +45,5 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 
 - [Source Code](https://github.com/muhammedogz/FCC-Responsive-Web-Design/tree/master/Personal-Portfolio)
 
-- [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
+- [Project Info](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
   
