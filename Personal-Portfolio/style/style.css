@@ -41,7 +41,7 @@ p {
 /* typography */
 
 nav ul li a {
-	font-size: 1.225em;
+	font-size: clamp(1.225em, 1vw + 1em, 2em);
 }
 
 .welcome {
@@ -260,6 +260,11 @@ footer:target {
 /* media */
 
 @media (min-width: 785px) {
+	nav ul {
+		justify-content: flex-end;
+		margin-right: 5em;
+	}
+
 	.projects {
 		margin: 0 auto;
 	}
