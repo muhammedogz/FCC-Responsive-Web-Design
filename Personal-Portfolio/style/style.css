@@ -15,6 +15,7 @@ html {
 }
 
 body {
+	font-family: "Ubuntu", sans-serif;
 	font-size: 1rem;
 	margin: 0;
 	background-color: #ff3cac;
