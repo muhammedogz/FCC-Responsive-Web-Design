@@ -34,7 +34,7 @@ For more info about the [course and projects](https://www.freecodecamp.org/learn
 
 - [FCC Project Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
   
-### Personal Portfolio 
+### Personal Portfolio
 
 - [Live Demo](https://muhammedogz.github.io/FCC-Responsive-Web-Design/Personal-Portfolio/index.html)
 
