@@ -78,7 +78,45 @@ section {
 	justify-content: center;
 	align-items: center;
 
+	color: white;
+
 	border: 2px solid black;
+}
+
+section::before {
+	content: "";
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	background-color: #6aaad6;
+	opacity: 0.1;
+	background-image: repeating-radial-gradient(
+			circle at 0 0,
+			transparent 0,
+			#6aaad6 10px
+		),
+		repeating-linear-gradient(#444cf755, #444cf7);
+}
+
+section::after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: #6aaad6;
+	opacity: 0.2;
+	background-image: radial-gradient(circle at center center, #444cf7, #6aaad6),
+		repeating-radial-gradient(
+			circle at center center,
+			#444cf7,
+			#444cf7,
+			10px,
+			transparent 20px,
+			transparent 10px
+		);
+	background-blend-mode: multiply;
 }
 
 /*-- Welcome Section --*/
@@ -89,13 +127,24 @@ section {
 	text-align: center;
 }
 
-.welcome a {
+.welcome div * {
+	display: block;
+}
+
+/* about me section */
+
+.about-me {
+	font-size: 1.6em;
+	text-align: center;
+}
+
+.about-me a {
 	text-decoration: none;
 	color: var(--color-link);
 }
 
-.welcome div * {
-	display: block;
+.about-me div {
+	margin-block: 3em;
 }
 
 /* footer */
