@@ -26,6 +26,11 @@ body {
 	);
 }
 
+img {
+	display: block;
+	min-width: 100%;
+}
+
 /* typography */
 
 nav ul li a {
@@ -136,7 +141,7 @@ section::after {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	inset: 0 0 0 0;
+	inset: 0;
 	background: hsl(19, 89%, 45%);
 	z-index: -1;
 	transition: transform 0.3s ease;
@@ -159,12 +164,17 @@ section::after {
 }
 
 .about-me a {
+	display: block;
 	text-decoration: none;
 	color: var(--color-link);
 }
 
 .about-me div {
 	margin-block: 3em;
+}
+
+.down-arrow {
+	width: 50%;
 }
 
 /* footer */
