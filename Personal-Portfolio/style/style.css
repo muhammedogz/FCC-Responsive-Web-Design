@@ -66,12 +66,12 @@ nav ul li {
 	margin-inline: 1em;
 }
 
-nav a {
+a {
 	text-decoration: none;
 	color: var(--color-link);
 }
 
-nav a:hover {
+a:hover {
 	color: hsl(240, 67%, 70%);
 }
 
@@ -88,10 +88,7 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	color: white;
-
-	border: 2px solid black;
 }
 
 /*-- Welcome Section --*/
@@ -151,6 +148,7 @@ section {
 .title {
 	margin-top: 1em;
 	position: relative;
+	border-bottom: 1px solid white;
 }
 
 .down-arrow {
@@ -173,8 +171,14 @@ section {
 	width: 80%;
 }
 
+.projects > h2 {
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+
 .project-tile {
-	margin-block: 1em;
+	margin-block: 3em;
 	text-align: center;
 	border-bottom: 5px solid #481872;
 }
@@ -190,7 +194,7 @@ section {
 }
 
 .project-footer {
-	background-color: wheat;
+	background-color: #481872;
 	padding: 0.3em;
 	padding-top: 0.6em;
 	display: flex;
@@ -209,10 +213,38 @@ section {
 
 footer {
 	text-align: center;
+	color: white;
 	padding: 2em;
+	background-color: #0b5081;
+}
+
+footer p {
+	margin: 1em;
+}
+
+footer a {
+	padding-top: 1em;
+	margin: 1em;
+	transition: all 300ms;
+}
+
+footer a:hover {
+	background-color: #ff3cac;
 }
 
 /* media */
 
 @media (min-width: 680px) {
+	.projects > div {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-around;
+	}
+	.project-tile {
+		width: 40%;
+	}
+
+	.project-tile img {
+		height: 300px;
+	}
 }
