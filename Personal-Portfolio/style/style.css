@@ -41,7 +41,7 @@ p {
 /* typography */
 
 nav ul li a {
-	font-size: clamp(1.225em, 1vw + 1em, 2em);
+	font-size: 1.225em;
 }
 
 .welcome {
@@ -84,6 +84,15 @@ a {
 	color: var(--color-link);
 }
 
+nav a {
+	transform: scale(1);
+}
+
+nav a:hover {
+	display: block;
+	border: 2px solid #b30f6b;
+}
+
 a:hover {
 	color: hsl(240, 67%, 70%);
 }
@@ -95,7 +104,7 @@ main {
 }
 
 section {
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
