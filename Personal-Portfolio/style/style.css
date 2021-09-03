@@ -85,12 +85,15 @@ a {
 }
 
 nav a {
-	transform: scale(1);
+	/* add invincible border, 
+    It will fix hover issue */
+	border: 2px solid #00000000;
 }
 
 nav a:hover {
 	display: block;
-	border: 2px solid #b30f6b;
+	transform: scale(1.2);
+	border-bottom: 2px solid #ff3cac;
 }
 
 a:hover {
